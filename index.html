@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dronimagination | Drone Map Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .map-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .map-card:hover {
+            transform: scale(1.03);
+        }
+        .map-card h2 {
+            margin-top: 0;
+            color: #1e3a8a;
+        }
+        .map-card p {
+            color: #555;
+        }
+        .map-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: #1e3a8a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛰️ Dronimagination Drone Map Gallery</h1>
+    <div class="container">
+        <div class="map-card">
+            <h2>KMEA Drone Survey</h2>
+            <p>High-resolution orthomosaic generated from DJI Air2S. Processed using GDAL for web visualization.</p>
+            <a href="kmea-map/" target="_blank">🌍 View Map</a>
+        </div>
+    </div>
+    <footer>
+        © 2025 Dronimagination Pvt Ltd | Maps powered by Leaflet + GitHub Pages
+    </footer>
+</body>
+</html>
